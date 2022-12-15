@@ -8,7 +8,7 @@
 
 ## Live site
 
-- https://barangay-cencus.onrender.com/login
+- https://barangay-cencus.onrender.com/
 
 ## Developer
 

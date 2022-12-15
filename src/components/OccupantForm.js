@@ -94,14 +94,17 @@ const OccupantForm = () => {
       monthlyIncome,
     };
 
-    const response = await fetch("http://127.0.0.1:8000/api/v1/occupants", {
-      method: "POST",
-      body: JSON.stringify(occupant),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      "https://barangay-cencus-api.onrender.com/api/v1/occupants",
+      {
+        method: "POST",
+        body: JSON.stringify(occupant),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
 
     const json = await response.json();
     console.log(occupant);

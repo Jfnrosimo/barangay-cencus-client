@@ -19,7 +19,8 @@ const OccupantContainer = ({ occupant }) => {
     }
 
     const response = await fetch(
-      "http://127.0.0.1:8000/api/v1/occupants/" + occupant._id,
+      "https://barangay-cencus-api.onrender.com/api/v1/occupants/" +
+        occupant._id,
       {
         method: "DELETE",
         headers: { Authorization: `Bearer ${user.token}` },

@@ -17,9 +17,12 @@ const Home = () => {
 
   useEffect(() => {
     const fetchOccupants = async () => {
-      const response = await fetch("http://127.0.0.1:8000/api/v1/occupants", {
-        headers: { Authorization: `Bearer ${user.token}` },
-      });
+      const response = await fetch(
+        "https://barangay-cencus-api.onrender.com/api/v1/occupants",
+        {
+          headers: { Authorization: `Bearer ${user.token}` },
+        }
+      );
       const json = await response.json();
 
       if (response.ok) {

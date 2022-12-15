@@ -10,11 +10,14 @@ export const useLogin = () => {
   const login = async (email, password) => {
     setError(null);
 
-    const response = await fetch("http://127.0.0.1:8000/user/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
+    const response = await fetch(
+      "https://barangay-cencus-api.onrender.com/user/login",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      }
+    );
     const json = await response.json();
 
     if (!response.ok) {

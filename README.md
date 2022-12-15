@@ -46,6 +46,4 @@ This is a Fullstack MERN project entitled Barangay Cencus. Status of this projec
 
 ### Entity Relationship Diagram (ERD)
 
-![](./client/src/assets/bc-ERD.png)
-
-### Database and API design
+![](./src/assets/bc-ERD.png)
